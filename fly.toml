@@ -1,15 +1,12 @@
-# fly.toml app configuration file generated for hidden-rain-3926 on 2023-10-22T11:16:52-06:00
+# fly.toml app configuration file generated for withered-fog-6010 on 2023-10-22T11:31:47-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "hidden-rain-3926"
+app = "withered-fog-6010"
 primary_region = "lax"
 
 [build]
-
-[env]
-  PORT = "8080"
 
 [http_service]
   internal_port = 8080
