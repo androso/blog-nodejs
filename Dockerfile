@@ -39,7 +39,9 @@
 
 # # Start the server by default, this can be overwritten at runtime
 # CMD [ "npm", "run", "start" ]
-FROM node
+# # Adjust NODE_VERSION as desired
+ARG NODE_VERSION=18.16.0
+FROM node:${NODE_VERSION}-slim as base
 
 RUN mkdir -p /usr/src/app
 
