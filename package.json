@@ -4,7 +4,8 @@
   "main": "index.js",
   "author": "Amjad Masad <amjad.masad@gmail.com>",
   "scripts": {
-    "start": "nodemon -e js,md -w ./ index.js"
+    "dev": "nodemon -e js,md -w ./ index.js",
+    "start": "node index.js"
   },
   "license": "MIT",
   "dependencies": {
