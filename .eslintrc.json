@@ -1,0 +1,101 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "babel"
+  ],
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true
+  },
+  "parseOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "localStorage": true
+  },
+  "rules": {
+    "no-useless-escape": "warn",
+    "no-else-return": "warn",
+    "consistent-return": "warn",
+    "prefer-const": "warn",
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-param-reassign": "warn",
+    "no-unused-vars": "warn",
+    "one-var": "warn",
+    "no-shadow": "warn",
+    "no-unused-expressions": "warn",
+    "no-case-declarations": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-duplicate-case": "warn",
+    "array-callback-return": "warn",
+    "no-prototype-builtins": "warn",
+    "no-return-assign": "warn",
+    "no-mixed-operators": "warn",
+    "no-confusing-arrow": "warn",
+    "no-nested-ternary": "warn",
+    "no-empty": "warn",
+    "prefer-rest-params": "warn",
+    "object-property-newline": "warn",
+    "newline-per-chained-call": "warn",
+    "no-restricted-properties": "warn",
+    "brace-style": "warn",
+    "no-multi-spaces": "warn",
+    "no-lonely-if": "warn",
+    "jsx-a11y/href-no-hash": "warn",
+    "valid-typeof": "warn",
+    "max-len": ["warn", 80],
+
+    "react/prop-types": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-filename-extension": ["warn", {
+      "extensions": [".react.js"]
+    }],
+    "react/prefer-stateless-function": "warn",
+    "react/jsx-no-target-blank": "warn",
+    "jsx-a11y/img-has-alt": "warn",
+    "react/no-string-refs": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "react/no-find-dom-node": "warn",
+    "jsx-a11y/label-has-for": "warn",
+    "react/no-unused-prop-types": "warn",
+    "react/forbid-prop-types": "warn",
+    "jsx-a11y/anchor-has-content": "warn",
+    "jsx-a11y/tabindex-no-positive": "warn",
+    "jsx-a11y/aria-props": "warn",
+    "react/no-did-mount-set-state": "warn",
+
+    "react/no-multi-comp": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off",
+    "import/newline-after-import": "off",
+    "no-plusplus": "off",
+    "default-case": "off",
+    "no-continue": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "guard-for-in": "off",
+    "no-template-curly-in-string": "off",
+    "global-require": "off",
+    "vars-on-top": "off",
+    "react/jsx-no-bind": "off",
+    "no-bitwise": "off",
+    "no-use-before-define": "off",
+    "func-names": "off",
+    "prefer-template": "off",
+    "comma-dangle": "off",
+    "object-shorthand": "off"
+  }
+}

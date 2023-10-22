@@ -1,0 +1,19 @@
+{
+  "name": "amasad.me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Amjad Masad <amjad.masad@gmail.com>",
+  "scripts": {
+    "start": "nodemon -e js,md -w ./ index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-async-router": "^0.1.12",
+    "highlight.js": "^9.9.0",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "feed": "2.0.1"
+  },
+  "devDependencies": {}
+}
