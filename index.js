@@ -33,12 +33,8 @@ app.use('/public', express.static(
   path.join(__dirname, 'public'), staticOpts
 ));
 
-app.use('/bitcoin', express.static(
-  path.join(__dirname, 'bitcoin.pdf'), staticOpts
-));
-
-app.use('/amasad', express.static(
-  path.join(__dirname, 'public/images/amasad.jpg'), staticOpts
+app.use('/androso', express.static(
+  path.join(__dirname, 'public/images/androso.jpg'), staticOpts
 ));
 
 app.use('/natural', express.static(
@@ -49,7 +45,7 @@ const essaysDir = path.join(__dirname, 'essays');
 
 function parse(fpath) {
   const post = fs.readFileSync(path.join(essaysDir, fpath), 'utf8');
-  const parts = post.split('---\n');
+  const parts = post.split('---\r\n'); // because we're in windows
   const json = parts.shift();
   const essay = (() => {
     try {
@@ -78,41 +74,41 @@ const essays = fs.readdirSync(essaysDir)
   .sort((a, b) => b.date - a.date);
 
 const feed = new Feed({
-  title: "Amjad Masad",
+  title: "Anibal Andrade",
   description: "Essays",
-  id: "https://amasad.me",
-  link: "https://amasad.me",
-  image: "https://www.gravatar.com/avatar/03637ef1a5121222c8db0ed48c34e124.png?s=200",
-  favicon: "https://www.gravatar.com/avatar/03637ef1a5121222c8db0ed48c34e124.png?s=200",
-  copyright: "All rights reserved 2019, Amjad Masad",
-  generator: "amasad.me",
+  id: "https://anibalandrade.com",
+  link: "https://anibalandrade.com",
+  image: "https://gravatar.com/avatar/5b920c03606b6c232f9c53a666972bdaf7510b5a9d983c1b8bbd61631d30c20e?size=200",
+  favicon: "https://gravatar.com/avatar/5b920c03606b6c232f9c53a666972bdaf7510b5a9d983c1b8bbd61631d30c20e?size=200",
+  copyright: "All rights reserved 2023, Anibal Andrade",
+  generator: "anibalandrade.me",
   feedLinks: {
-    json: "https://amasad.me/json",
-    rss: "https://amasad.me/rss"
+    json: "https://anibalandrade.com/json",
+    rss: "https://anibalandrade.com/rss"
   },
   author: {
-    name: "Amjad Masad",
-    email: "amjad.masad@gmail.com",
-    link: "https://amasad.me"
+    name: "Anibal Andrade",
+    email: "anibal.andrade.sv@gmail.com",
+    link: "https://anibalandrade.com"
   }
 });
 
 for (const essay of essays) {
   if (essay.hidden) continue;
-  
+
   feed.addItem({
     title: essay.title,
     id: essay.id,
-    url: `https://amasad.me/${essay.url}`,
+    url: `https://anibalandrade.com/${essay.url}`,
     description: essay.description,
     content: essay.content,
     date: essay.date,
     image: essay.image,
     author: [
       {
-        name: "Amjad Masad",
-        email: "amjad.masad@gmail.com",
-        link: "https://amasad.me"
+        name: "Anibal Andrade",
+        email: "anibal.andrade.sv@gmail.com",
+        link: "https://anibalandrade.com"
       },
     ],
   });
@@ -120,7 +116,7 @@ for (const essay of essays) {
 
 feed.addCategory("Tech");
 
-app.use(function(req,res,next) {
+app.use(function (req, res, next) {
   res.header('X-Rob-Is-Awesom', true);
   next();
 });
@@ -146,11 +142,11 @@ app.get('/', (req, res) => {
   <article class="index postContent">
     <nav>
       <a href="/about">About</a>
-      <a href="https://twitter.com/amasad">Twitter</a>
-      <a href="mailto:amjad@repl.it">Email</a>
-      <a href="https://replit.com/@amasad">Replit</a>
-      <a href="https://github.com/amasad">Github</a>
-      <a href="https://amasad.me/rss">RSS</a>
+      <a href="https://twitter.com/AnibalAndrade_">Twitter</a>
+      <a href="mailto:anibal.andrade.sv@gmail.com">Email</a>
+      <a href="https://replit.com/@androsoa3">Replit</a>
+      <a href="https://github.com/androso">Github</a>
+      <a href="https://anibalandrade.com/rss">RSS</a>
     </nav>
     <div class="essayList">
       Essays:
@@ -236,24 +232,6 @@ app.get('/bio', (req, res) => {
 
 const redirections = {
   '/2012/12/11/stuffjs': '/stuffjs',
-  '/2016/04/14/kierkegaard-and-entrepreneurship': '/kierkegaard',
-  '/2015/04/09/hello-world': '/hello-world',
-  '/2016/03/05/caching-and-promises': '/caching-promises',
-  '/2012/07/17/on-vms-in-javascript': '/js-vms',
-  '/2016/01/17/eval-as-a-service': '/eval-as-a-service',
-  '/2016/01/03/overcoming-intuition-in-programming': '/intuition',
-  '/2016/03/09/john-carmack-on-idea-generation': '/carmack',
-  '/2012/07/02/the-dark-side-of-functionprototypebind': '/bind',
-  '/2016/01/13/the-stoic-of-open-source': '/stoic-oss',
-  '/2014/03/09/lesser-known-javascript-debugging-techniques': '/debugging',
-  '/2014/03/16/why-im-excited-about-objectobserve': '/object-observe',
-  '/2015/10/31/javascript-async-functions-for-easier-concurrent-programming':
-    '/async-js',
-  '/2016/03/13/what-is-perfectionism-and-how-to-cure-it': '/perfectionism',
-  '/2014/01/18/introducing-waraby-mobile-optimized-arabic-search-web-app':
-    '/waraby',
-  '/2014/01/10/implementing-bret-victors-learnable-programming-has-never-been-easier': '/learnable',
-  '/2014/01/06/building-an-in-browser-javascript-vm-and-debugger-using-generators': '/js-debugger',
 };
 
 Object.keys(redirections).forEach((key) => {
