@@ -241,7 +241,7 @@ Object.keys(redirections).forEach((key) => {
   });
 });
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log('running on port', port);
 });
