@@ -156,6 +156,14 @@ app.get('/', (req, res) => {
       <a href="https://anibalandrade.com/rss">RSS</a>
     </nav>
     <div class="essayList">
+      Projects:
+      <ul>
+        <li>
+          <a href="https://kanban.anibalandrade.com">Kanban</a>
+        </li>
+      </ul
+    </div>
+    <div class="essayList">
       Essays:
       <ul>
         ${essayList}

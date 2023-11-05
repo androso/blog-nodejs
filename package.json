@@ -1,8 +1,8 @@
 {
-  "name": "amasad.me",
+  "name": "anibalandrade.com",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Amjad Masad <amjad.masad@gmail.com>",
+  "author": "Anibal Andrade <androso421@gmail.com>",
   "scripts": {
     "dev": "nodemon -e js,md -w ./ index.js",
     "start": "node index.js"
