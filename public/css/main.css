@@ -269,10 +269,9 @@ header {
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: rgb(17, 28, 49);
   padding: 10px;
 }
 
 .replit img {
-  width: 50px;
+  width: 80px;
 }
