@@ -48,7 +48,7 @@ function parse(fpath) {
   let parts = null;
 
   if (process.platform === "linux") {
-    parts = post.split('---\n'); 
+    parts = post.split('---\n');
   } else {
     parts = post.split('---\r\n'); // because we're in windows
   }
@@ -146,15 +146,16 @@ app.get('/', (req, res) => {
   )).join('\n');
 
   const html = `
+  <div class="introduction">
+    <div class="introduction__text">
+      <h2>Hey, I'm Anibal</h2>
+      <p>I'm a software engineer who loves writing software and following my curiosity</p>
+      <p>When i'm not hacking, you can find me exploring neuroscience and writing essays around love, friendships and life</p>
+    </div>
+    <img src="/public/images/androso-2.jpeg" alt="that's me!">
+  </div>
   <article class="index postContent">
-    <nav>
-      <a href="/about">About</a>
-      <a href="https://twitter.com/AnibalAndrade_">Twitter</a>
-      <a href="mailto:anibal.andrade.sv@gmail.com">Email</a>
-      <a href="https://replit.com/@androsoa3">Replit</a>
-      <a href="https://github.com/androso">Github</a>
-      <a href="https://anibalandrade.com/rss">RSS</a>
-    </nav>
+
     <div class="essayList">
       Projects:
       <ul>

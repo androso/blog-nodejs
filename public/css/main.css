@@ -1,107 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+body {
+	font-family: "Mulish", sans-serif;
+}
 
 a {
-  color: #4183C4;
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
+	color: #4183c4;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
 }
 
-a:hover, a:active, a:focus {
-  border-bottom: 1px solid #4183C4;
+a:hover,
+a:active,
+a:focus {
+	border-bottom: 1px solid #4183c4;
 }
 
 header {
-  font-family: Questrial;
-  margin-top: 50px;
-  margin-left: 50px;
-  font-size: 20px;
+	font-family: Questrial;
+	margin-top: 50px;
+	margin-left: 50px;
+	font-size: 20px;
 }
 
 .index {
-  margin-left: 70px;
+	margin-left: 70px;
 }
 
-@media all and (max-width : 720px) {
-  header {
-    margin-left: 18px;
-  }
-  .index {
-    margin-left: 30px;
-  }
+@media all and (max-width: 720px) {
+	header {
+		margin-left: 18px;
+	}
+	.index {
+		margin-left: 30px;
+	}
 }
 
-.index nav a {
-  margin-right: 10px;
+header nav a {
+	margin-right: 10px;
 }
 
 .postItem {
-  width: 720px;
-  margin: 50px auto 50px;
+	width: 720px;
+	margin: 50px auto 50px;
 }
 
 .post-seperator {
-  width: 800px;
-  margin-top: 20px;
-  margin-left: -40px;
-  border-top: 1px solid #ececec;
+	width: 800px;
+	margin-top: 20px;
+	margin-left: -40px;
+	border-top: 1px solid #ececec;
 }
 
 .postItem:last-child .post-seperator {
-  display: none;
+	display: none;
 }
 
 .postItem img {
-  display: block;
-  margin: 50px auto;
-  max-width: 100%;
+	display: block;
+	margin: 50px auto;
+	max-width: 100%;
 }
 
 .postItem img + em {
-  display: block;
-  text-align: center;
-  margin-top: -40px;
-  font-size: 18px;
+	display: block;
+	text-align: center;
+	margin-top: -40px;
+	font-size: 18px;
 }
 
-@media all and (max-width : 800px) {
-  .post-seperator {
-    width: 100%;
-    margin-left: auto;
-  }
+@media all and (max-width: 800px) {
+	.post-seperator {
+		width: 100%;
+		margin-left: auto;
+	}
 }
 
 .postTitle a {
-  font-size: 43px;
-  line-height: 1.15;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: black;
+	font-size: 43px;
+	line-height: 1.15;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
 }
 
 .postTitle a:hover {
-  color: #4183C4
+	color: #4183c4;
 }
 
 .postAuthor {
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin-top: 15px;
-  color: #807F7F;
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	margin-top: 15px;
+	color: #807f7f;
 }
 
 .postContent {
-  font-family: "Miller Text Rom", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 45px;
-  color: rgb(93, 91, 91);
+	font-family: "Miller Text Rom", Georgia, Cambria, "Times New Roman", Times,
+		serif;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-top: 45px;
+	color: rgb(93, 91, 91);
 }
 
 .postContent h1,
@@ -109,169 +117,290 @@ header {
 .postContent h3,
 .postContent h4,
 .postContent h5 {
-  color: rgb(76, 75, 75);
-  font-family: Lato;
-  font-weight: 400;
-  margin-top: 10px;
+	color: rgb(76, 75, 75);
+	font-family: Lato;
+	font-weight: 400;
+	margin-top: 10px;
 }
 
 .postContent h1 {
-  font-size: 30px;
-  color: rgb(63, 64, 63);
-  margin-top: 20px;
+	font-size: 30px;
+	color: rgb(63, 64, 63);
+	margin-top: 20px;
 }
 
 .postContent h2 {
-  font-size: 26px;
-  margin-top: 20px;
+	font-size: 26px;
+	margin-top: 20px;
 }
 
 .postContent h3 {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 .postContent h4 {
-  font-size: 22px;
+	font-size: 22px;
 }
 
 .postContent h5 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .postContent p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .postContent ul {
-  padding-left: 5px;
+	padding-left: 5px;
 }
 
 .postContent ol {
-  padding-left: 25px
+	padding-left: 25px;
 }
 
 .postContent ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
 }
 
-.postContent ul, .postContent ol {
-  margin: 20px 0;
+.postContent ul,
+.postContent ol {
+	margin: 20px 0;
 }
 
+@media all and (max-width: 720px) {
+	.postItem {
+		width: auto;
+		margin: 50px 18px;
+	}
 
-@media all and (max-width : 720px) {
-  .postItem {
-    width: auto;
-    margin: 50px 18px;
-  }
+	.postTitle a {
+		font-size: 36px;
+	}
 
-  .postTitle a {
-    font-size: 36px;
-  }
+	.postContent {
+		font-size: 16px;
+	}
 
-  .postContent {
-    font-size: 16px;
-  }
+	.postAuthor {
+		font-size: 16px;
+	}
 
-  .postAuthor {
-    font-size: 16px;
-  }
+	.postContent h1 {
+		font-size: 28px;
+	}
 
-  .postContent h1 {
-    font-size: 28px;
-  }
+	.postContent h2 {
+		font-size: 24px;
+	}
 
-  .postContent h2 {
-    font-size: 24px;
-  }
+	.postContent h3 {
+		font-size: 22px;
+	}
 
-  .postContent h3 {
-    font-size: 22px;
-  }
+	.postContent h4 {
+		font-size: 20px;
+	}
 
-  .postContent h4 {
-    font-size: 20px;
-  }
-
-  .postContent h5 {
-    font-size: 18px;
-  }
+	.postContent h5 {
+		font-size: 18px;
+	}
 }
 
 /* Nested */
 .postContent ul > li > ul > li:before {
-  font-size: 20px;
-  line-height: 1.6;
-  content: "◦ ";
-  color: #807F7F;
+	font-size: 20px;
+	line-height: 1.6;
+	content: "◦ ";
+	color: #807f7f;
 }
 
 .postContent ul > li {
-  padding-left: 1em;
-  text-indent: -.7em;
+	padding-left: 1em;
+	text-indent: -0.7em;
 }
 
 .postContent ol > li {
-  text-indent: 0;
+	text-indent: 0;
 }
 
 .postContent li > ul,
 .postContent li > ol {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 .postContent pre {
-  overflow: auto;
-  border: 1px solid #e1e1e8;
-  padding: 12px;
-  margin-top: 20px  ;
+	overflow: auto;
+	border: 1px solid #e1e1e8;
+	padding: 12px;
+	margin-top: 20px;
 }
 
 .postContent pre code {
-  display: block;
-  border-bottom: 1px solid #eee;
-  overflow-x: scroll;
+	display: block;
+	border-bottom: 1px solid #eee;
+	overflow-x: scroll;
 }
 
-.postContent code, .postContent pre {
-  font-size: 12px;
-  line-height: 18px;
-  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+.postContent code,
+.postContent pre {
+	font-size: 12px;
+	line-height: 18px;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .postContent pre code {
-  color: #000;
-  border: none;
+	color: #000;
+	border: none;
 }
 
 .postContent blockquote {
-  font-style: italic;
-  border-left: 3px solid black;
-  padding-left: 20px;
+	font-style: italic;
+	border-left: 3px solid black;
+	padding-left: 20px;
 }
 
 .readMore {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .essayList {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .replit {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  padding: 10px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
 }
 
 .replit img {
-  width: 80px;
+	width: 80px;
+}
+
+/**  INTRODUCTION **/
+.introduction {
+	display: flex;
+	flex-direction: column-reverse;
+	padding-top: 2.5rem;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.introduction__text {
+	text-align: center;
+	max-width: 354px;
+	margin: 0 auto;
+	color: #5d5b5b;
+}
+.introduction__text h2 {
+	color: #4183c4;
+	margin-bottom: 0.7rem;
+	font-size: 1.2rem;
+}
+.introduction__text p:first-of-type {
+	margin-bottom: 0.5rem;
+}
+.introduction img {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	margin: 0 auto 1rem auto;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	width: 92vw;
+}
+header div {
+	display: flex;
+	position: relative;
+}
+header div nav {
+	display: none;
+}
+header .site-logo {
+	display: none;
+}
+
+.introduction__text h2 {
+	font-size: 1.7rem;
+}
+.introduction__text p {
+	font-size: 1.2rem;
+}
+@media all and (min-width: 520px) {
+	.introduction {
+		flex-direction: row;
+		justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+		width: 92vw;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.introduction__text {
+		text-align: left;
+		max-width: unset;
+		margin: 0 1.6rem 0 0;
+	}
+	.introduction__text h2 {
+		font-size: 1.9rem;
+	}
+	.introduction__text p {
+		font-size: 1.3rem;
+	}
+	.introduction img {
+		margin: 0;
+		min-width: 175px;
+		min-height: 175px;
+		max-width: 230px;
+		max-height: 230px;
+		width: 30%;
+		height: 30%;
+	}
+	.index.postContent {
+		width: 85vw;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header div nav {
+		display: inline-block;
+	}
+}
+
+@media all and (min-width: 720px) {
+	.introduction {
+		padding-top: 4.4rem;
+	}
+	.introduction__text {
+		margin: 0 4rem 0 0;
+	}
+	header div {
+		margin-right: 80px;
+	}
+	header .site-logo {
+		display: inline-block;
+		width: 80px;
+		position: absolute;
+		top: -30px;
+		right: -90px;
+		border-radius: 6px;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	header {
+		max-width: 80vw;
+	}
 }
