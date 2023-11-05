@@ -25,7 +25,7 @@ a:focus {
 
 header {
 	font-family: Questrial;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left: 50px;
 	font-size: 20px;
 }
@@ -386,6 +386,9 @@ header .site-logo {
 	.introduction__text {
 		margin: 0 4rem 0 0;
 	}
+  header {
+    margin-top: 50px;
+  }
 	header div {
 		margin-right: 80px;
 	}
