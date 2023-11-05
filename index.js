@@ -46,11 +46,13 @@ const essaysDir = path.join(__dirname, 'essays');
 function parse(fpath) {
   const post = fs.readFileSync(path.join(essaysDir, fpath), 'utf8');
   let parts = null;
+
   if (process.platform === "linux") {
     parts = post.split('---\n'); 
   } else {
     parts = post.split('---\r\n'); // because we're in windows
   }
+
   const json = parts.shift();
   const essay = (() => {
     try {
