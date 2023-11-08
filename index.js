@@ -160,7 +160,8 @@ app.get('/', (req, res) => {
       Projects:
       <ul>
         <li>
-          <a href="https://kanban.anibalandrade.com">Kanban</a>
+          <a href="https://ahorcado.anibalandrade.com">Hangman</a>
+          <a href="https://kanban.anibalandrade.com">Kanban app</a>
         </li>
       </ul
     </div>
