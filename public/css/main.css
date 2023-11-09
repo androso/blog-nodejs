@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
 
+/**** DARK MODE ****/
+
+:root {
+	--background-color: #fafafa;
+	--theme-toggle-color: #161e2b;
+	--highlight-title: #4183c4;
+	--nav-links-color: #4183c4;
+	--normal-links-color: #4183c4;
+	--text-color: #5d5b5b;
+	--toggle-theme-bg: #b5b5b5;
+}
+
+[data-theme="dark"] {
+	--background-color: #161e2b;
+	--theme-toggle-color: #fafafa;
+	--highlight-title: #c1fdff;
+	--nav-links-color: #fafafa;
+	--normal-links-color: #b0e8ea;
+	--text-color: #b5b5b5;
+	--toggle-theme-bg: #4183c4;
+}
+
+#toggle-theme {
+	background: none;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	color: var(--theme-toggle-color);
+	position: fixed;
+	bottom: 1.5rem;
+	right: 2rem;
+}
+
+#toggle-theme:hover {
+	background-color: var(--toggle-theme-bg);
+}
+
+#toggle-theme svg {
+	width: 2.4rem;
+	height: 2.4rem;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -8,10 +50,12 @@
 
 body {
 	font-family: "Mulish", sans-serif;
+	height: 100vh;
+	background-color: var(--background-color);
 }
 
 a {
-	color: #4183c4;
+	color: var(--normal-links-color);
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 1px solid transparent;
@@ -25,7 +69,7 @@ a:focus {
 
 header {
 	font-family: Questrial;
-	margin-top: 30px;
+	padding-top: 30px;
 	margin-left: 50px;
 	font-size: 20px;
 }
@@ -41,6 +85,11 @@ header {
 	.index {
 		margin-left: 30px;
 	}
+}
+
+header nav a,
+header a {
+	color: var(--nav-links-color);
 }
 
 header nav a {
@@ -280,6 +329,9 @@ header nav a {
 	right: 0px;
 	padding: 10px;
 }
+p {
+	color: var(--text-color);
+}
 
 .replit img {
 	width: 80px;
@@ -301,10 +353,11 @@ header nav a {
 	color: #5d5b5b;
 }
 .introduction__text h2 {
-	color: #4183c4;
+	color: var(--highlight-title);
 	margin-bottom: 0.7rem;
 	font-size: 1.2rem;
 }
+
 .introduction__text p:first-of-type {
 	margin-bottom: 0.5rem;
 }
@@ -386,9 +439,9 @@ header .site-logo {
 	.introduction__text {
 		margin: 0 4rem 0 0;
 	}
-  header {
-    margin-top: 50px;
-  }
+	header {
+		padding-top: 50px;
+	}
 	header div {
 		margin-right: 80px;
 	}

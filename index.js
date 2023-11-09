@@ -155,18 +155,19 @@ app.get('/', (req, res) => {
     <img src="/public/images/androso-2.jpeg" alt="that's me!">
   </div>
   <article class="index postContent">
-
     <div class="essayList">
-      Projects:
+      <p>Projects:</p>
       <ul>
         <li>
-          <a href="https://ahorcado.anibalandrade.com">Hangman</a>
           <a href="https://kanban.anibalandrade.com">Kanban app</a>
+        </li>
+        <li>
+          <a href="https://ahorcado.anibalandrade.com">Hangman</a>
         </li>
       </ul
     </div>
     <div class="essayList">
-      Essays:
+      <p>Essays:</p>
       <ul>
         ${essayList}
       </ul>
