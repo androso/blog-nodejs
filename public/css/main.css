@@ -50,8 +50,9 @@
 
 body {
 	font-family: "Mulish", sans-serif;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: var(--background-color);
+	padding-bottom: 2rem;
 }
 
 a {
@@ -137,7 +138,7 @@ header nav a {
 	line-height: 1.15;
 	font-family: sans-serif;
 	font-weight: bold;
-	color: black;
+	color: var(--theme-toggle-color);
 }
 
 .postTitle a:hover {
@@ -166,7 +167,7 @@ header nav a {
 .postContent h3,
 .postContent h4,
 .postContent h5 {
-	color: rgb(76, 75, 75);
+	color: var(--theme-toggle-color);
 	font-family: Lato;
 	font-weight: 400;
 	margin-top: 10px;
@@ -311,7 +312,7 @@ header nav a {
 
 .postContent blockquote {
 	font-style: italic;
-	border-left: 3px solid black;
+	border-left: 3px solid var(--highlight-title);
 	padding-left: 20px;
 }
 
