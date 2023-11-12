@@ -1,6 +1,6 @@
 {
 "title": "Español - Crafting Wisdom vol 1",
-"date": "11/9/2023"
+"date": "11/11/2023"
 }
 
 ---
