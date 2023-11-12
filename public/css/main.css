@@ -52,7 +52,7 @@ body {
 	font-family: "Mulish", sans-serif;
 	min-height: 100vh;
 	background-color: var(--background-color);
-	padding-bottom: 2rem;
+	padding-bottom: 2.5rem;
 }
 
 a {
