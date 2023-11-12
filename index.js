@@ -167,7 +167,7 @@ app.get('/', (req, res) => {
       </ul
     </div>
     <div class="essayList">
-      <p>Essays:</p>
+      <p>Essays / Notes:</p>
       <ul>
         ${essayList}
       </ul>
