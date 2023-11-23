@@ -11,10 +11,12 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-async-router": "^0.1.12",
+    "feed": "2.0.1",
     "highlight.js": "^9.9.0",
     "lodash": "^4.17.4",
-    "marked": "^0.3.6",
-    "feed": "2.0.1"
+    "marked": "^0.3.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
