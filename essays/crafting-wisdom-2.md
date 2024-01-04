@@ -1,6 +1,7 @@
 {
 "title": "Crafting Wisdom vol 2",
-"date": "11/18/2023"
+"date": "11/18/2023",
+"hidden": "true"
 }
 
 ---

@@ -139,7 +139,7 @@ app.get('/rss', (req, res) => {
 app.get('/hello', (req, res) => res.end('hello world'));
 
 app.get('/', (req, res) => {
-  const essayList = essays.filter(es => !es.hidden).map(es => (
+  const essayList = essays.sort((a, b) => b.date - a.date).filter(es => !es.hidden).map(es => (
     `<li>
        <a href="${es.url}">${es.title}</a>
      </li>`
